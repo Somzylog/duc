@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .box{
+                width: 100%;
+                height: 600px;
+                display: flex;
+            }
+            .shoe1, .shoe2 , .shoe3{
+                width: 33.3% ;
+                height: 600px;
+                
+            }
+            .shoe1{
+                background-color: red;
+                display: flex;
+                justify-content: center;
+            }
+            .shoe2{
+                background-color: blue;
+                display: flex;
+                justify-content: center;
+            }
+            .shoe3{
+                background-color: green;
+                display: flex;
+                justify-content: center;
+               
+            }
+            img{
+                height: 100px;
+                align-self: center;
+                z-index: 1;
+            }
+            h1{
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 130px;
+                font-size: 300px;
+                
+            }
+           
+        
+        </style>
+</head>
+<body>
+    <div class="box">
+        <div class="shoe1">
+            <h1 class="like1">D</h1>
+            <img class="omo1" src="Red.png" alt="">
+           
+        </div>
+        <div class="shoe2">
+            <h1 class="like2">U</h1>
+            <img class="omo2" src="blue shoe.jpg" alt="">
+            
+        </div>
+        <div class="shoe3">  
+            <h1 class="like3">C</h1>          
+            <img class="omo3" src="green.png" alt="">
+                      
+        </div>
+    </div>
+
+
+    <script>
+         let head1 = document.querySelector('.like1')
+         let head2 = document.querySelector('.like2')
+         let head3 = document.querySelector('.like3')
+        let one = document.querySelector('.omo1')
+        let two = document.querySelector('.omo2')
+        let three = document.querySelector('.omo3')
+        let f1 = document.querySelector('.shoe1')
+        let f2 = document.querySelector('.shoe2')
+        let f3 = document.querySelector('.shoe3')
+        f1.onclick = function () {
+            f1.style.width = "50%";
+            one.style.height = "150px"
+            document.querySelector(".like1").innerHTML = "Duplicate"
+            head1.style.fontSize = "50px"
+            head1.style.top ="170px"
+           
+            f1.style.transitionDuration = "2s"
+            one.style.transitionDuration = "2s"
+            f2.style.width = "33.3%";
+            two.style.height = "100px"
+            document.querySelector(".like2").innerHTML = "U"
+            head2.style.fontSize = "300px"
+            head2.style.top ="130px"
+            f3.style.transitionDuration = "2s"
+            three.style.transitionDuration = "2s"
+            f3.style.width = "33.3%";
+            three.style.height = "100px"
+            document.querySelector(".like3").innerHTML = "C"
+            head3.style.fontSize = "300px"
+            head3.style.top ="130px"
+           
+            
+
+           
+        }
+        f2.onclick = function () {
+            f2.style.width = "50%";
+            two.style.height = "150px"
+            document.querySelector(".like2").innerHTML = "Unique"
+            head2.style.fontSize = "50px"
+            head2.style.top ="170px"
+            f2.style.transitionDuration = "2s"
+            two.style.transitionDuration = "2s"
+            f1.style.width = "33.3%";
+            one.style.height = "100px"
+            document.querySelector(".like1").innerHTML = "D"
+            head1.style.fontSize = "300px"
+            head1.style.top ="130px"
+            f3.style.transitionDuration = "2s"
+            three.style.transitionDuration = "2s"
+            f3.style.width = "33.3%";
+            three.style.height = "100px"
+            document.querySelector(".like3").innerHTML = "C"
+            head3.style.fontSize = "300px"
+            head3.style.top ="130px"
+        }
+        f3.onclick = function () {
+            f3.style.width = "50%";
+            three.style.height = "150px"
+            document.querySelector(".like3").innerHTML = "Competitive"
+            head3.style.fontSize = "50px"
+            head3.style.top ="170px"
+            f3.style.transitionDuration = "2s"
+            three.style.transitionDuration = "2s"
+            f1.style.width = "33.3%";
+            one.style.height = "100px"
+            document.querySelector(".like1").innerHTML = "D"
+            head1.style.fontSize = "300px"
+            head1.style.top ="130px"
+            f2.style.width = "33.3%";
+            two.style.height = "100px"
+            document.querySelector(".like2").innerHTML = "U"
+            head2.style.fontSize = "300px"
+            head2.style.top ="130px"
+        }
+
+    </script>
+</body>
+</html>
